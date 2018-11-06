@@ -1,0 +1,17 @@
+{
+  "name": "westernreperfusion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:treemmett/WesternReperfusion",
+  "author": "treemmett <tregan@tregan.me>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "next",
+    "build": "next build"
+  },
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  }
+}
