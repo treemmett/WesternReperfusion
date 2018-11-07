@@ -1,0 +1,44 @@
+.hero{
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  &:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url('/static/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 75%;
+  }
+
+  .tagline{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 6em;
+    width: 500px;
+    max-width: 100%;
+    color: #eee;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: right;
+    animation: tagline 1.5s ease-in-out 1;
+  }
+}
+
+section{
+  min-height: 50vh;
+}
+
+@keyframes tagline{
+  from{
+    transform: translateX(50px);
+    opacity: 0;
+  }
+}
