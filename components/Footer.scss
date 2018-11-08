@@ -1,0 +1,39 @@
+footer{
+  padding: 5em 10em;
+  background-color: #1b1b1e;
+  color: #eee;
+}
+
+.newsletter{
+  font-size: 22px;
+
+  p{
+    margin: 0;
+  }
+
+  form{
+    margin-top: 0.5em;
+  }
+
+  input{
+    font-size: 20px;
+    outline: none;
+    background-color: #fff;
+    border: none;
+    font-family: 'Montserrat';
+    padding: 0.3em 0.4em;
+    border-radius: 5px;
+    
+    &[type=email]{
+      border-right: 1px solid #1b1b1e;
+    }
+
+    &[type=submit]{
+      margin-left: 1em;
+      background-color: #59cd90;
+      cursor: pointer;
+      padding: 0.3em 0.6em;
+      color: #fff;
+    }
+  }
+}
