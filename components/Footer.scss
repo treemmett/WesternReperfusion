@@ -1,7 +1,24 @@
+$dark: #1b1b1e;
+
+@font-face {
+  font-family: 'icons';
+  src:  url('/static/fonts/icons.eot?pksxr5');
+  src:  url('/static/fonts/icons.eot?pksxr5#iefix') format('embedded-opentype'),
+    url('/static/fonts/icons.ttf?pksxr5') format('truetype'),
+    url('/static/fonts/icons.woff?pksxr5') format('woff'),
+    url('/static/fonts/icons.svg?pksxr5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 footer{
   padding: 5em 10em;
-  background-color: #1b1b1e;
+  background-color: $dark;
   color: #eee;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .newsletter{
@@ -25,7 +42,7 @@ footer{
     border-radius: 5px;
     
     &[type=email]{
-      border-right: 1px solid #1b1b1e;
+      border-right: 1px solid $dark;
     }
 
     &[type=submit]{
@@ -34,6 +51,59 @@ footer{
       cursor: pointer;
       padding: 0.3em 0.6em;
       color: #fff;
+    }
+  }
+}
+
+.social{
+  a{
+    font-family: 'icons';
+    display: inline-block;
+    font-size: 32px;
+    margin-right: 0.8em;
+    color: #eee;
+    border-radius: 13px;
+    user-select: none;
+    cursor: pointer;
+
+    &.yt{
+      &:before{
+        content: "\ea9d";
+      }
+
+      &:hover{
+        color: #f00;
+      }
+    }
+
+    &.tw{
+      &:before{
+        content: "\ea96";
+      }
+      
+      &:hover{
+        color: #00a2f9;
+      }
+    }
+
+    &.ig{
+      &:before{
+        content: "\ea92";
+      }
+
+      &:hover{
+        color: #bd3381;
+      }
+    }
+
+    &.fb{
+      &:before{
+        content: "\ea90";
+      }
+
+      &:hover{
+        color: #33589d
+      }
     }
   }
 }
