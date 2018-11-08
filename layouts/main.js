@@ -8,6 +8,7 @@ export default ({ children }) => (
       body{
         margin: 0;
         font-family: 'Montserrat', sans-serif;
+        color: #333;
       }
     `}</style>
 
