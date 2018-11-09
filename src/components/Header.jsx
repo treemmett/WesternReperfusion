@@ -1,5 +1,5 @@
+import React from 'react';
 import classNames from 'classnames';
-import Link from 'next/link';
 import './Header.scss';
 
 export default class extends React.Component{
@@ -20,7 +20,7 @@ export default class extends React.Component{
     const { top } = document.body.getBoundingClientRect();
     
     // update opqueness of header
-    if(top < 0 !== this.state.opaque){
+    if((top < 0) !== this.state.opaque){
       this.setState({opaque: top < 0});
     }
   }
@@ -31,11 +31,11 @@ export default class extends React.Component{
   
       <nav>
         <ul>
-          <li><Link href="/about"><a>About</a></Link></li>
-          <li><Link href="/work"><a>Our Work</a></Link></li>
-          <li><Link href="/locations"><a>Locations</a></Link></li>
-          <li><Link href="/volunteer"><a>Volunteer</a></Link></li>
-          <li><Link href="/donate"><a>Donate</a></Link></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/work">Our Work</a></li>
+          <li><a href="/locations">Locations</a></li>
+          <li><a href="/volunteer">Volunteer</a></li>
+          <li><a href="/donate">Donate</a></li>
         </ul>
       </nav>
     </header>

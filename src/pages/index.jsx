@@ -1,13 +1,21 @@
-import Page from '../layouts/main';
+import React from 'react';
+import Page from '../layouts/Page';
 import { Parallax } from 'react-parallax';
 import './index.scss';
+
+// Parallax images
+import hero1 from '../images/hero1.jpg';
+import hero2 from '../images/hero2.jpg';
+import hero3 from '../images/hero3.jpg';
+
+console.log(hero1);
 
 export default () => (
   <Page>
     <div className="hero">
       <div className="tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
       <Parallax
-      bgImage="/static/images/hero1.jpg"
+      bgImage={hero1}
       strength={150}
       blur={0.1}
     />
@@ -23,7 +31,7 @@ export default () => (
     </section>
     <div className="hero">
       <Parallax
-      bgImage="/static/images/hero2.jpg"
+      bgImage={hero2}
       strength={150}
       blur={0.1}/>
     </div>
@@ -40,7 +48,7 @@ export default () => (
     </section>
     <div className="hero">
       <Parallax
-        bgImage="/static/images/hero3.jpg"
+        bgImage={hero3}
         strength={150}
         blur={0.1}/>
     </div>
