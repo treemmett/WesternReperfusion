@@ -1,15 +1,5 @@
 $dark: #1b1b1e;
-
-@font-face {
-  font-family: 'icons';
-  src:  url('/static/fonts/icons.eot?pksxr5');
-  src:  url('/static/fonts/icons.eot?pksxr5#iefix') format('embedded-opentype'),
-    url('/static/fonts/icons.ttf?pksxr5') format('truetype'),
-    url('/static/fonts/icons.woff?pksxr5') format('woff'),
-    url('/static/fonts/icons.svg?pksxr5#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('../fonts/icons.css');
 
 footer{
   padding: 5em 10em;
